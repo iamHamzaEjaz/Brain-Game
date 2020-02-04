@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Rl"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:id="@+id/background"
+        android:scaleType="centerCrop"
+        android:alpha="0.1"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RLtop"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timer"
+            android:text="@string/timer"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:text="@string/score"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/questionTv"
+            android:text="@string/question"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RLmiddle"
+         android:layout_below="@+id/RLtop"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="doTheMatch"
+            android:tag="0"
+            android:text="4"
+            android:id="@+id/ans1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentLeft="true"
+            android:alpha=".7"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="doTheMatch"
+            android:tag="1"
+            android:text="10"
+            android:id="@+id/ans2"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:alpha=".7"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="doTheMatch"
+            android:tag="2"
+            android:text="4"
+            android:id="@+id/ans3"
+            android:layout_below="@+id/ans1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:alpha=".7"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="doTheMatch"
+            android:tag="3"
+            android:text="10"
+            android:id="@+id/ans4"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/ans2"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:alpha=".7"
+            />
+     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RLmiddle"
+        android:id="@+id/answerestatus"
+        android:text="Answere status"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:textColor="@color/colorBackground"
+        android:textSize="30sp"
+        android:padding="4dp"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answerestatus"
+        android:id="@+id/playBtn"
+        android:text="Play Again"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:onClick="playAgain"
+        />
+</RelativeLayout>
+

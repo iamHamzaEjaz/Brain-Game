@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyFirstApplication</string>
+    <string name="let_the_game_begane">Let the Game Begane</string>
+    <string name="timer">30s</string>
+    <string name="score">0/0</string>
+    <string name="question">2 + 2</string>
+    <string name="ans1">4</string>
+</resources>
